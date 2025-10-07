@@ -254,17 +254,17 @@ export default function TypingPractice({ onComplete, onViewLeaderboard, isLogged
           <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-2xl p-5 sm:p-7 mb-5 border-2" style={{ borderColor: '#9DB668' }}>
             <div className="mb-5">
               <div 
-                className="p-6 sm:p-8 rounded-2xl flex items-center justify-center" 
+                className="p-4 sm:p-6 md:p-8 rounded-2xl flex items-center justify-center" 
                 style={{ 
                   backgroundColor: '#F5F3ED', 
-                  minHeight: '110px',
-                  maxHeight: '110px',
-                  overflow: 'hidden',
+                  minHeight: '100px',
+                  maxHeight: '140px',
+                  overflow: 'auto',
                   boxShadow: 'inset 0 2px 8px rgba(0,0,0,0.05)'
                 }}
               >
                 {/* All words in one container that wraps to 2 lines */}
-                <div className="flex flex-wrap gap-x-2 gap-y-2 justify-center" style={{ lineHeight: '1.8', alignContent: 'center' }}>
+                <div className="flex flex-wrap gap-x-1.5 sm:gap-x-2 gap-y-1.5 sm:gap-y-2 justify-center" style={{ lineHeight: '1.6', alignContent: 'center' }}>
                   {visibleWords.map((word, index) => {
                     const isCurrentWord = index === currentWordOffset;
                     
@@ -293,13 +293,14 @@ export default function TypingPractice({ onComplete, onViewLeaderboard, isLogged
                         className="font-semibold"
                         style={{
                           color: textColor,
-                          fontSize: 'clamp(14px, 2vw, 18px)',
+                          fontSize: 'clamp(12px, 3vw, 18px)',
                           fontFamily: 'system-ui, -apple-system, sans-serif',
                           fontWeight: '600',
                           backgroundColor: bgColor,
                           padding: bgColor !== 'transparent' ? '2px 6px' : '0',
                           borderRadius: bgColor !== 'transparent' ? '4px' : '0',
-                          whiteSpace: 'nowrap'
+                          whiteSpace: 'nowrap',
+                          flexShrink: 0
                         }}
                       >
                         {word.text}
