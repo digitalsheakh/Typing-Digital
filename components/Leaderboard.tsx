@@ -27,8 +27,7 @@ export default function Leaderboard({ currentUserEmail, onContinue, onSaveScore,
   const [leaders, setLeaders] = useState<LeaderboardEntry[]>([]);
   const [loading, setLoading] = useState(true);
   const [showAuthModal, setShowAuthModal] = useState(false);
-  const [animatingRank, setAnimatingRank] = useState<number | null>(null);
-  const [showConfetti, setShowConfetti] = useState(false);
+  const [showConfetti] = useState(false);
 
   const handleLogoutClick = () => {
     if (window.confirm('If you log out, you will not be able to save your scores. Are you sure you want to logout?')) {

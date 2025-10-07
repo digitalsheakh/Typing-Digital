@@ -39,10 +39,11 @@ export default function AuthModal({ onClose, onSuccess }: AuthModalProps) {
         await updateProfile(userCredential.user, { displayName: name });
         onSuccess(name, email);
       }
-    } catch (err: any) {
-      console.error('Auth error:', err);
+    } catch (error) {
+      console.error('Auth error:', error);
       
       // User-friendly error messages
+      const err = error as { code?: string };
       if (err.code === 'auth/email-already-in-use') {
         setError('This email is already registered. Please login instead.');
       } else if (err.code === 'auth/invalid-email') {

@@ -41,15 +41,6 @@ export default function TypingPractice({ onComplete, onViewLeaderboard, isLogged
     return word;
   };
 
-  const generateInitialWords = () => {
-    const initialWords = [];
-    const totalWords = WORDS_PER_LINE * VISIBLE_LINES + 10;
-    for (let i = 0; i < totalWords; i++) {
-      initialWords.push({ text: generateRandomWord(i), status: 'upcoming' as const });
-    }
-    return initialWords;
-  };
-
   useEffect(() => {
     // Shuffle word bank on mount
     setShuffledWordBank(shuffleWords(WORD_BANK));
@@ -66,6 +57,7 @@ export default function TypingPractice({ onComplete, onViewLeaderboard, isLogged
       setWords(initialWords);
       setWordBankIndex(totalWords);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [shuffledWordBank]);
 
   useEffect(() => {
@@ -77,21 +69,23 @@ export default function TypingPractice({ onComplete, onViewLeaderboard, isLogged
     // Countdown timer
     if (startTime && !isComplete && timeRemaining > 0) {
       timerRef.current = setInterval(() => {
-        const elapsed = Math.floor((Date.now() - startTime) / 1000);
-        const remaining = COUNTDOWN_TIME - elapsed;
-        
-        if (remaining <= 0) {
-          setTimeRemaining(0);
-          setIsComplete(true);
-          calculateResults();
-        } else {
-          setTimeRemaining(remaining);
-        }
-      }, 100);
+        setTimeRemaining((prev) => {
+          if (prev <= 1) {
+            setIsComplete(true);
+            calculateResults();
+            return 0;
+          }
+          return prev - 1;
+        });
+      }, 1000);
     }
+
     return () => {
-      if (timerRef.current) clearInterval(timerRef.current);
+      if (timerRef.current) {
+        clearInterval(timerRef.current);
+      }
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [startTime, isComplete, timeRemaining]);
 
   const handleInputChange = (value: string) => {

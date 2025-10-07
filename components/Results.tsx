@@ -17,10 +17,8 @@ interface ResultsProps {
 }
 
 export default function Results({ 
-  score, 
   wpm, 
   accuracy, 
-  timeInSeconds, 
   onSaveScore, 
   onPracticeAgain,
   onViewLeaderboard,
@@ -30,12 +28,6 @@ export default function Results({
 }: ResultsProps) {
   const [showAuthModal, setShowAuthModal] = useState(false);
   const [saving, setSaving] = useState(false);
-
-  const formatTime = (seconds: number) => {
-    const mins = Math.floor(seconds / 60);
-    const secs = Math.floor(seconds % 60);
-    return `${mins}:${secs.toString().padStart(2, '0')}`;
-  };
 
   const handleAuthSuccess = async (name: string, email: string) => {
     setSaving(true);
