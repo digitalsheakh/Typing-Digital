@@ -1,4 +1,27 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Typing Digital
+
+A modern, mobile-friendly typing practice web application built with Next.js and Firebase.
+
+## Features
+
+- **60-Second Typing Test**: Practice your typing speed with a 1-minute countdown
+- **5000+ Word Bank**: Shuffled words for every practice session
+- **Live Feedback**: Real-time color coding (grey → red → green) as you type
+- **WPM Scoring**: Track your Words Per Minute performance
+- **Firebase Authentication**: Secure login and signup with persistent sessions
+- **Leaderboard**: Compete with other typists globally
+- **Social Sharing**: Share your results on Facebook, Twitter, and WhatsApp
+- **Mobile Optimized**: Perfect for both desktop and mobile devices
+- **Beautiful UI**: Modern gradient design with smooth animations
+
+## Tech Stack
+
+- **Frontend**: Next.js 15, React 19, TypeScript
+- **Styling**: Tailwind CSS 4
+- **Backend**: Firebase (Authentication & Firestore)
+- **Deployment**: Vercel-ready
+
+This is a [Next.js](https://nextjs.org) project.
 
 ## Getting Started
 
