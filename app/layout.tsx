@@ -18,11 +18,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Typing Digital - Practice Your Typing Speed',
     description: 'I can type X words per minute. Are you faster? Test your typing speed and compare the result with your friends.',
-    url: 'https://typingdigital.com',
+    url: 'https://typing.sheakh.digital',
     siteName: 'Typing Digital',
     images: [
       {
-        url: '/og-image.png',
+        url: 'https://typing.sheakh.digital/og-image.png',
         width: 1200,
         height: 630,
         alt: 'Typing Digital - Test Your Typing Speed',
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Typing Digital - Practice Your Typing Speed',
     description: 'Test your typing speed and compete with others!',
-    images: ['/og-image.png'],
+    images: ['https://typing.sheakh.digital/og-image.png'],
   },
 };
 

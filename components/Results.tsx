@@ -49,21 +49,23 @@ export default function Results({
   };
 
   const handleShareFacebook = () => {
-    const shareUrl = `typingdigital.com/share-result/${wpm}_${Math.round(wpm * accuracy / 100)}_${Math.round(wpm * (100 - accuracy) / 100)}`;
+    const shareUrl = `https://typing.sheakh.digital`;
     const url = encodeURIComponent(shareUrl);
     const facebookUrl = `https://www.facebook.com/sharer/sharer.php?u=${url}`;
-    window.open(facebookUrl, '_blank', 'width=600,height=400');
+    window.open(facebookUrl, '_blank');
   };
 
   const handleShareTwitter = () => {
-    const url = encodeURIComponent(window.location.href);
-    const text = encodeURIComponent(`I just scored ${wpm} WPM on Type Digital! 🎯\n\nCan you beat my typing speed?`);
+    const shareUrl = `https://typing.sheakh.digital`;
+    const url = encodeURIComponent(shareUrl);
+    const text = encodeURIComponent(`I just scored ${wpm} WPM on Typing Digital! 🎯\n\nCan you beat my typing speed?`);
     const twitterUrl = `https://twitter.com/intent/tweet?text=${text}&url=${url}`;
-    window.open(twitterUrl, '_blank', 'width=600,height=400');
+    window.open(twitterUrl, '_blank');
   };
 
   const handleShareWhatsApp = () => {
-    const text = encodeURIComponent(`I just scored ${wpm} WPM on Type Digital! 🎯\n\nCan you beat my typing speed? ${window.location.href}`);
+    const shareUrl = `https://typing.sheakh.digital`;
+    const text = encodeURIComponent(`I just scored ${wpm} WPM on Typing Digital! 🎯\n\nCan you beat my typing speed? ${shareUrl}`);
     const whatsappUrl = `https://wa.me/?text=${text}`;
     window.open(whatsappUrl, '_blank');
   };
