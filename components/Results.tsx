@@ -49,7 +49,9 @@ export default function Results({
   };
 
   const handleShareFacebook = () => {
-    const shareUrl = `https://typing.sheakh.digital`;
+    const correct = Math.round(wpm * accuracy / 100);
+    const incorrect = Math.round(wpm * (100 - accuracy) / 100);
+    const shareUrl = `https://typing.sheakh.digital/share-result/${wpm}_${correct}_${incorrect}`;
     const url = encodeURIComponent(shareUrl);
     const facebookUrl = `https://www.facebook.com/sharer/sharer.php?u=${url}`;
     window.open(facebookUrl, '_blank');

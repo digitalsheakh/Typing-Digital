@@ -1,0 +1,29 @@
+To create your Open Graph image (og-image.png):
+
+1. Take a screenshot of your website homepage at https://typing.sheakh.digital
+2. Resize it to exactly 1200x630 pixels
+3. You can use tools like:
+   - Canva (free)
+   - Photoshop
+   - Online tools: https://www.iloveimg.com/resize-image
+   
+4. Add text overlay (optional):
+   - "Typing Digital"
+   - "Test Your Typing Speed"
+   - "Track Your WPM"
+
+5. Save as "og-image.png" in the /public folder
+
+This image will appear when people share your website on:
+- Facebook
+- Twitter
+- LinkedIn
+- WhatsApp
+- And other social media platforms
+
+Recommended design:
+- Clean, professional look
+- Show the typing interface
+- Include your logo/branding
+- Use your brand colors (#9DB668 olive green)
+- Make text readable even when small

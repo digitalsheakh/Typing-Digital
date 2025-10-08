@@ -1,5 +1,8 @@
-// Comprehensive word bank with 5000+ common English words
+// Simple and friendly word bank for typing practice
 export const WORD_BANK = [
+  // Special locations
+  "Bangladesh", "Moulvibazar", "Sylhet", "Dhaka", "Chittagong",
+  
   // Common words (1-100)
   "the", "be", "to", "of", "and", "a", "in", "that", "have", "I",
   "it", "for", "not", "on", "with", "he", "as", "you", "do", "at",
@@ -155,7 +158,7 @@ export const WORD_BANK = [
   "another", "answer", "anyone", "anything", "anyway", "anywhere", "apart", "appear",
   "apple", "apply", "approach", "appropriate", "approve", "area", "argue", "arise",
   "around", "arrange", "arrest", "arrive", "article", "artist", "aside", "aspect",
-  "assess", "assign", "assist", "associate", "assume", "assure", "attach", "attack",
+  "assess", "assign", "assist", "associate", "assume", "assure", "attach", "achieve",
   "attempt", "attend", "attention", "attitude", "attract", "audience", "author",
   "authority", "automatic", "available", "average", "avoid", "award", "aware", "away",
   
@@ -203,14 +206,14 @@ export const WORD_BANK = [
   "corporation", "correct", "correspondent", "cost", "cotton", "couch", "could",
   "council", "count", "counter", "country", "county", "couple", "courage", "course",
   "court", "cousin", "cover", "coverage", "cow", "crack", "craft", "crash", "crazy",
-  "cream", "create", "creation", "creative", "creature", "credit", "crew", "crime",
-  "criminal", "crisis", "criteria", "critic", "critical", "criticism", "criticize",
+  "cream", "create", "creation", "creative", "creature", "credit", "crew", "cricket",
+  "crisis", "criteria", "critic", "critical", "criticism", "criticize",
   "crop", "cross", "crowd", "crucial", "cry", "cultural", "culture", "cup", "curious",
   "current", "currently", "curriculum", "custom", "customer", "cycle",
   
   "dad", "daily", "damage", "dance", "danger", "dangerous", "dare", "dark",
-  "darkness", "date", "daughter", "dawn", "dead", "deal", "dealer", "dear",
-  "death", "debate", "debt", "decade", "decide", "decision", "deck", "declare",
+  "darkness", "date", "daughter", "dawn", "deal", "dealer", "dear",
+  "debate", "debt", "decade", "decide", "decision", "deck", "declare",
   "decline", "decrease", "deep", "deeply", "deer", "defeat", "defend", "defendant",
   "defense", "defensive", "deficit", "define", "definitely", "definition", "degree",
   "delay", "deliver", "delivery", "demand", "democracy", "democratic", "demonstrate",
@@ -285,7 +288,7 @@ export const WORD_BANK = [
   "grain", "grand", "grandfather", "grandmother", "grant", "grass", "grateful",
   "grave", "gray", "great", "greatest", "greatly", "green", "grocery", "ground",
   "growing", "guarantee", "guard", "guess", "guest", "guidance", "guide", "guideline",
-  "guilty", "gun", "guy",
+  "guilty", "guitar", "guy",
   
   "habit", "habitat", "hair", "half", "hall", "hand", "handful", "handle", "hang",
   "happen", "happily", "happiness", "harbor", "hardly", "harm", "hat", "hate",
@@ -323,7 +326,7 @@ export const WORD_BANK = [
   "journalist", "journey", "joy", "judge", "judgment", "juice", "jump", "junior",
   "jury", "just", "justice", "justify",
   
-  "keep", "key", "kick", "kill", "killer", "killing", "kind", "king", "kiss",
+  "keep", "key", "kick", "kind", "king", "kiss",
   "kitchen", "knee", "knife", "knock", "know", "knowledge", "known",
   
   "label", "labor", "laboratory", "lack", "lady", "lake", "land", "landscape",
@@ -354,7 +357,7 @@ export const WORD_BANK = [
   "model", "moderate", "modern", "modest", "mom", "moment", "money", "monitor",
   "month", "mood", "moon", "moral", "moreover", "morning", "mortgage", "mostly",
   "mother", "motion", "motivation", "motor", "mount", "mountain", "mouse", "mouth",
-  "movement", "movie", "multiple", "murder", "muscle", "museum", "music", "musical",
+  "movement", "movie", "multiple", "muscle", "museum", "music", "musical",
   "musician", "Muslim", "must", "mutual", "myself", "mystery", "myth",
   
   "naked", "name", "narrative", "narrow", "nation", "national", "native", "natural",
@@ -433,7 +436,7 @@ export const WORD_BANK = [
   "respect", "respond", "respondent", "response", "responsibility", "responsible",
   "rest", "restaurant", "restore", "restriction", "result", "retain", "retire",
   "retirement", "return", "reveal", "revenue", "review", "revolution",
-  "revolutionary", "reward", "rhetoric", "rice", "rich", "rid", "ride", "rifle",
+  "revolutionary", "reward", "rhetoric", "rice", "rich", "rid", "ride", "right",
   "right", "ring", "rise", "rising", "risk", "ritual", "rival", "river", "road",
   "rock", "role", "roll", "romantic", "roof", "room", "root", "rope", "rose",
   "rough", "roughly", "round", "route", "routine", "row", "rub", "rule", "ruler",
@@ -490,7 +493,7 @@ export const WORD_BANK = [
   "teaching", "team", "tear", "teaspoon", "technical", "technique", "technology",
   "teen", "teenager", "telephone", "telescope", "television", "tell", "temperature",
   "temporary", "ten", "tend", "tendency", "tennis", "tension", "tent", "term",
-  "terms", "terrible", "territory", "terror", "terrorism", "terrorist", "testify",
+  "terms", "terrible", "territory", "testify",
   "testimony", "testing", "text", "than", "thank", "thanks", "theater", "their",
   "them", "theme", "themselves", "then", "theory", "therapy", "there", "therefore",
   "these", "they", "thick", "thin", "thing", "think", "thinking", "third",
@@ -516,13 +519,13 @@ export const WORD_BANK = [
   "vacation", "valley", "valuable", "variable", "variation", "variety", "various",
   "vary", "vast", "vegetable", "vehicle", "venture", "version", "versus", "very",
   "vessel", "veteran", "via", "victim", "victory", "video", "view", "viewer",
-  "village", "violate", "violation", "violence", "violent", "virtually", "virtue",
+  "village", "violate", "violation", "virtually", "virtue",
   "virus", "visible", "vision", "visit", "visitor", "visual", "vital", "voice",
   "volume", "volunteer", "vote", "voter", "vulnerable",
   
   "wage", "wait", "wake", "walk", "wall", "wander", "want", "warm", "warn",
   "warning", "wash", "waste", "watch", "wave", "way", "weak", "wealth", "wealthy",
-  "weapon", "wear", "weather", "wedding", "week", "weekend", "weekly", "weigh",
+  "wear", "weather", "wedding", "week", "weekend", "weekly", "weigh",
   "weight", "welcome", "welfare", "well", "west", "western", "wet", "what",
   "whatever", "wheel", "when", "whenever", "where", "whereas", "whether", "which",
   "while", "whisper", "white", "whole", "whom", "whose", "wide", "widely",
